@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cardapio</title>
+</head>
+<body>
+    <div class="titulo">
+    <i class="fa-solid fa-burger"></i>
+     <h1> CARDÁPIO </h1>
+     </div>
+    <div class="menu">
+         <div class="item">
+            
+             <img src="img/duplo-picanha.png"/>
+             <h2>DUPLO PICANHA</h2>
+             <p class="preco">R$22.00</p>    
+        <button class="adicionar-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+         <div class="item">
+           
+            <img src="img/cheddar.png"/>
+             <h2> CHEDDAR EM DOBRO</h2>
+             <p class="preco">R$18.00</p>    
+        <button class="adicionar-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+         <div class="item">
+            <img src="img/x-salada.png"/>
+             <h2>X-SALADA</h2>
+             <p class="preco">R$16.00</p>    
+        <button class="adicionar-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+         <div class="item">
+            <img src="img/egg-burguer.png"/>
+             <h2>EGG BURGUER</h2>
+             <p class="preco">R$14.00</p>    
+        <button class="adicionar-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+   
+    </div>
+      <div class="carrinho-info">
+    <h2>🛒 Seu Pedido:</h2>
+    <ul id="lista-pedido">
+        </ul>
+    <p>Total: <span id="valor-total">R$ 0.00</span></p>
+    <button id="finalizar-compra" style="display:none;">FINALIZAR PEDIDO VIA WHATSAPP</button>
+</div>
+
+  
+    
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3a0ab0675a.js" crossorigin="anonymous"></script>
+</body>
+</html>
