@@ -7,6 +7,33 @@ body {
     background-color: black;
     color: white;
 }
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  
+}
+
+.categorias button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff6f00; /* cor principal */
+  color: #ffffff;       /* texto branco */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 120px;
+  
+}
+.categorias button:hover {
+  background: #ffa000; 
+}
+
 .titulo {
     display: flex;
     justify-content: center;
@@ -30,6 +57,7 @@ h1 {
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 100px;
     gap: 100px;
     text-align: center;
@@ -58,7 +86,7 @@ img {
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
-button {
+  .item button {
     background-color: #FFD700;
     height: 30px;
     width: 100px;
@@ -69,7 +97,7 @@ button {
     
     
 }
-button:hover {
+.item button:hover {
   background-color: #27b323; /* tom mais escuro no hover */
   transform: scale(1.05); /* cresce levemente */
   box-shadow: 0 0 10px #2bff00; /* brilho ao redor */
@@ -159,6 +187,9 @@ button:hover {
     padding: 40px 0;
     width: 90%;
     margin: 0 auto;
+   
+    
+    
   }
 
   .carrinho-info h2 {
@@ -183,4 +214,10 @@ button:hover {
     font-size: 12px;
     height: 35px;
   }
+}
+
+ ul {
+    list-style: none; /* remove os bullets */
+    padding: 0;       /* remove o padding padrão */
+    margin: 0;        /* remove a margem padrão */
 }

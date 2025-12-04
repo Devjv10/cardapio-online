@@ -1,5 +1,4 @@
-const carrinho = [];
-const numeroWhatsApp = "5583987073314";
+
 //  Produtos:
 /* const produtos = [
     { id: 1, nome: "DUPLO PICANHA", preco: 22.00, imagem: "img/duplo-picanha.png" },
@@ -45,6 +44,24 @@ botoes.forEach((botao) => {
         }
     });
 }); */
+
+function filtrarCategoria(categoria) {
+  const itens = document.querySelectorAll(".item");
+
+  itens.forEach(item => {
+    const cat = item.getAttribute("data-categoria");
+
+    if (categoria === "tudo" || categoria === cat) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+const carrinho = [];
+const numeroWhatsApp = "5583987073314";
+
 const botoes = document.querySelectorAll('.adicionar-carrinho');
 const listaPedido = document.getElementById('lista-pedido');
 const valorTotal = document.getElementById('valor-total');
